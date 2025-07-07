@@ -1,0 +1,58 @@
+.card-header {
+  background: linear-gradient(90deg, #198754, #34d399);
+  color: white;
+  font-weight: bold;
+}
+
+.card {
+  border-radius: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+  transform: scale(1.01);
+  transition: 0.2s ease;
+}
+
+.invoice-preview {
+  background-color: #f8f9fa;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  margin-top: 2rem;
+  border: 1px solid #dee2e6;
+}
+
+.invoice-preview table {
+  background-color: white;
+}
+
+.btn-rounded {
+  border-radius: 30px;
+}
+
+.d-print-none {
+  margin-top: 20px;
+}
+@media print {
+  body * {
+    visibility: hidden;
+  }
+
+  .invoice-preview,
+  .invoice-preview * {
+    visibility: visible;
+  }
+
+  .invoice-preview {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    background: white;
+  }
+
+  .no-print {
+    display: none !important;
+  }
+}

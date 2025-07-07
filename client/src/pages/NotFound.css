@@ -1,0 +1,11 @@
+.notfound-container {
+  padding: 20px;
+}
+
+.notfound-container h1 {
+  font-weight: bold;
+}
+
+.notfound-container p {
+  color: #6c757d;
+}
